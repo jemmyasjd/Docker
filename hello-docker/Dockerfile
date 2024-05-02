@@ -1,7 +1,7 @@
-FROM node:20-alpine 
+FROM python:3
 
-WORKDIR /app
+WORKDIR /
 
 COPY . .
 
-CMD node hello.js
+CMD [ "python", "hello.py" ]
